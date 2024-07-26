@@ -13,7 +13,7 @@ export default function App() {
         <Dictionary />
       </main>
       <footer className="footer">
-        Coded by <a href="" >Nic Alonso</a>  |  Hosted on  <a href="">Netlify</a>
+        Coded by <a href="https://app.netlify.com/" >Nic Alonso</a>  |  Hosted on  <a href="https://app.netlify.com/">Netlify</a>
       </footer>
     </div>
   );
