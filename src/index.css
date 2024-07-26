@@ -1,0 +1,17 @@
+.dictionary{
+    font-size: 20px;
+   
+}
+.search-input{
+    width: 25%;
+    border-radius: 15px;
+}
+.btn{
+    width: 10%;
+    align-content: center;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-bottom: 6px;
+    background-color: #e8fe85;
+
+}

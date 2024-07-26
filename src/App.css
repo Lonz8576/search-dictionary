@@ -1,3 +1,15 @@
 .logo{
  margin: 1.5rem;
 }
+.footer{
+    font-size: 12px;
+    color: black;
+    margin: 1rem;
+    text-align: center;
+}
+.footer a{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
