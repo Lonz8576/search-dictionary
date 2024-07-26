@@ -17,9 +17,9 @@ export default function Dictionary() {
 
     return (
     <div className="dictionary">
-        <form onSubmit={search}className="text-center">
+        <form onSubmit={search}className="text-center m-3">
         <input type="text" autoFocus={true} placeholder="What would you like defined?" id="search-input" onChange={handleKeyword} className="search-input p-2"/>
-        <button type="submit" class="btn btn-outline-dark py-2 ">Search</button>
+        <button type="submit" class="btn py-2 ">Search</button>
         </form>
     </div>
     );
