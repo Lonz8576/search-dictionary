@@ -1,6 +1,9 @@
 .logo{
  margin: 1.5rem;
 }
+.App{
+    background-color: rgb(255, 255, 255);
+}
 .footer{
     font-size: 12px;
     color: black;
@@ -13,3 +16,4 @@
     text-decoration: none;
     color: black;
 }
+

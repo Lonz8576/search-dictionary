@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import "./index.css";
+import axios from "axios";
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState("");
 
+    function handleResponse(response) {
+        console.log(response.data);
+    }
+
     function search(event) {
         event.preventDefault();
-        alert(`Search for ${keyword}`);
+        
+
+        let apiUrl= `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+        axios.get(apiUrl).then(handleResponse);
     }
      
     function handleKeyword(event) {
@@ -17,9 +25,9 @@ export default function Dictionary() {
 
     return (
     <div className="dictionary">
-        <form onSubmit={search}className="text-center m-3">
+        <form onSubmit={search} className="text-center m-3">
         <input type="text" autoFocus={true} placeholder="What would you like defined?" id="search-input" onChange={handleKeyword} className="search-input p-2"/>
-        <button type="submit" class="btn py-2 ">Search</button>
+        <button type="submit" className="btn py-2 px-3 ">Search</button>
         </form>
     </div>
     );
