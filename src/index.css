@@ -5,6 +5,7 @@
 form {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .search-input{
     width: 25%;
@@ -18,7 +19,7 @@ form {
     align-content: center;
     border: 2px solid #013b33;
     border-radius: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
     background-color: #e8fe85;
 
 }
