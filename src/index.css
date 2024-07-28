@@ -23,3 +23,23 @@ form {
     background-color: #e8fe85;
 
 }
+.main-word{
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+.partOfSpeech{
+    font-size: 20px;
+    font-weight: 600;
+}
+.definition{
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.example{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: oblique;
+}
