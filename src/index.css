@@ -1,14 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-
-
-
-
+* {
+    color: black;
+}
 
 .dictionary{
     font-size: 20px;
+    margin: 2rem;
    
 }
 form {
@@ -33,24 +33,43 @@ form {
 
 }
 .main-word{
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
     text-decoration: underline;
-    font-variant: small-caps;
+    text-transform:capitalize;
 }
 .partOfSpeech{
+    font-size: 24px;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+.title {
+    font-family:  "Courier Prime", monospace;
     font-size: 20px;
     font-weight: 600;
-    text-transform: capitalize;
 }
 .definition{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    font-family:  "Playfair Display", serif;
+    font-family: "DM Sans", sans-serif;
 
 }
 .example{
+    font-family:  "Courier Prime", monospace;
     font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+.synTitle {
+    font-size: 18px;
+    font-variant: small-caps;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    text-decoration:underline;
+}
+li {
+    font-size: 16px;
+    font-family:  "Courier Prime", monospace;
     font-weight: 400;
-    font-style: oblique;
 }
