@@ -3,7 +3,8 @@ import React from "react";
 export default function Synonyms(props) {
     if (props.synonyms) {
          return (
-            <ul className="Synonyms">
+            <div className="synonym-box">
+            <ul className="Synonyms align-content-center m-2 py-4">
                 <div className="synTitle">Synonyms:</div>
               {props.synonyms.map(function(synonym, index) {
                 return ( 
@@ -13,6 +14,7 @@ export default function Synonyms(props) {
                 )      
                 })}
                 </ul>
+                </div>
         );
     } else {
          return null;
