@@ -5,91 +5,94 @@
 * {
     color: black;
 }
+body{
+    background-image: url("./grey.jpg") ;
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center cover;
+}
 
 .dictionary{
-    font-size: 20px;
-    margin: 2rem;
-   
+    margin:3rem;
 }
 form {
     display: flex;
     justify-content: center;
     position: relative;
 }
+placeholder{
+    background-color: white;
+}
 .search-input{
     width: 25%;
-    border: 2px solid #013b33;
+    border: 2px solid #1d1c1c;
     border-radius: 15px;
 }
 .btn{
     font-size: 18px;
     font-weight: 600;
-    color: #013b33;
+    color: #ffffff;
     align-content: center;
-    border: 2px solid #013b33;
+    border: 2px ridge #bbb9b9;
     border-radius: 15px;
     margin-left: 10px;
-    background-color: #e8fe85;
+    background-color: rgb(241, 170, 62);
 
 }
 .main-word{
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     font-family: "DM Sans", sans-serif;
     text-transform:capitalize;
+
     
 }
 .word-result{
-    color:white;
-    background-color: #013b33;
+    color:rgb(7, 7, 7);
+    font-size: 30px;
+    background-color: #ffffff;
     padding: 10px;
-    border-radius: 20px;
-}
-.Phonetic{
-    color:white;
-    background-color: #013b33;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 20px;
+    border-radius: 6px;
+    border: 2px ridge #494848;
 }
 .Phonetic a{
-    text-decoration: none;
-    color: #e8fe85;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    line-height: 1.5px;
     font-size: 18px;
-    font-weight: 400;
-}
-.spelling{
-    color:white;
-
+    border-radius: 6px;
+    border: 2px ridge rgb(73, 72, 72);
 }
 .partOfSpeech{
     font-size: 26px;
     font-weight: 900;
     font-variant: small-caps;
-    color:#e8fe85;
+    color:rgba(7, 7, 7, 0.993);
     text-decoration: underline;
 }
 .title {
     font-family:  "Courier Prime", monospace;
-    font-size: 20px;
-    color:white;
+    font-size: 22px;
+    color:rgb(7, 7, 7);
     text-align: left;
     font-weight: 500;
 }
 .definition{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    color:white;
+    color:rgb(8, 8, 8);
     text-align: left;
     font-family: "DM Sans", sans-serif;
 
 }
 .defBox{
-    color:white;
-    background-color: #0e4842;
+    color:rgb(31, 30, 30);
+    background-color:rgb(241, 170, 62);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 6px;
     align-content: center;
+    border: 2px ridge rgb(73, 72, 72);
     width: 50%;
     position: relative;
     
@@ -100,40 +103,29 @@ form {
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
-    margin:15px;
+    margin-left: -10px;
 
 }
 .exBox{
-    background-color: #e8fe85;
-    color:#013b33;
-    display: flex;
-    position: relative;
-    border-radius: 8px;
-    margin:15px;
+    background-color: #f8f8f6;
+    border: 2px ridge rgb(73, 72, 72);
+    border-radius: 20px;
 }
 .synBox{
-    background-color: #e8fe85;
-    color:#013b33;
-    position: relative;
-    border-radius: 8px;
-    margin:15px;
-
+    background-color: #ffffff;
+    border: 2px ridge rgb(73, 72, 72);
+    border-radius: 20px;
 }
 .synTitle {
-    font-size: 18px;
+    font-size: 20px;
     font-variant: small-caps;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
+    margin-left:-15px;
     text-decoration:underline;
 }
 li {
-    font-size: 16px;
+    font-size: 18px;
     font-family:  "Courier Prime", monospace;
     font-weight: 400;
-}
-hr{
-    color:#013b33;
-    height:5px;
-    border-color: #013b33;
-    border: 2px solid #013b33;
 }
