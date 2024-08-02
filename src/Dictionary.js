@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./index.css";
+import logo from "./owlknow.png";
 import axios from "axios";
 import Results from "./Results";
 
@@ -25,15 +27,23 @@ export default function Dictionary() {
         setKeyword(event.target.value);
 
     }
+    
 
 
     return (
     <div className="dictionary">
-        <form onSubmit={search} className="text-center m-3">
-        <input type="search" autoFocus={true} placeholder="What would you like defined?" id="search-input" onChange={handleKeyword} className="search-input p-2"/>
-        <button type="submit" className="btn py-2 px-3 ">Search</button>
+        <section className="search-area">
+       <div className="hint">Find synonyms, definitions, antonyms, and related words</div>
+        <form onSubmit={search} className="input-group text-center mt-3">
+        <input type="search" placeholder="learn it, know it!" onChange={handleKeyword} className="form-control p-2" aria-label="word-search"/>
+        <button class="btn btn-search" type="submit"><i class="bi bi-search-heart heart"></i></button>
+
         </form>
+        <div className="text-center"id="logo" ><img src={logo} className='logo' alt='logo' width={100}/></div>
+               
+        </section>
         <Results results={results} />
+       
     </div>
     );
 }

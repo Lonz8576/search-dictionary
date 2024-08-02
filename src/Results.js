@@ -9,25 +9,33 @@ export default function Results(props) {
     return (
     
         <div className="Results">
-            <div className="main-word row my-4 text-center justify-content-center">
-                <div className="word-result col-3 g-2 align-content-center">
-                {props.results[0].word}</div>
+            
+            <section className="main-word">
+                <div className=" row">
+                <div className="word-result col">
+                {props.results[0].word}
+                </div>
+                </div>
                 {props.results[0].phonetics.map(function(phonetic, index) {
                     
                     return (
-                        <div className="col-3 align-content-center" key={index}>
+                        <div className="row d-flex">
+                        <div className="hear-see col-12" key={index}>
                             <Phonetic phonetic={phonetic} />
                             </div>
+                            </div>
+
                     )
                 }
                 )}
-                </div>
+                
+                </section>
               {props.results[0].meanings.map(function(meaning, index){
                 return (
-                    <div key={index}>
+                    <section key={index}>
                         <Meaning meaning={meaning} />
                       
-                        </div>
+                        </section>
                 );
               }
               )} 

@@ -1,129 +1,107 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 * {
     color: black;
 }
+a{
+    color: black;
+}
 body{
-    background-image: url("./grey.jpg") ;
-    background-size:cover;
-    background-repeat: repeat;
-    background-position: center cover;
+    background-color: #fbe8a6;
 }
-
-.dictionary{
-    margin:3rem;
-}
-form {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-placeholder{
+.logo{
+    margin: 1rem;
+   }
+input::placeholder{
+    color: black;
+    font-weight: 600;
     background-color: white;
+    opacity: 1;
+    font-family: "DM Sans", sans-serif;
 }
-.search-input{
-    width: 25%;
-    border: 2px solid #1d1c1c;
-    border-radius: 15px;
+.form-control{
+    font-size: 20px;
 }
 .btn{
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff;
-    align-content: center;
-    border: 2px ridge #bbb9b9;
-    border-radius: 15px;
-    margin-left: 10px;
-    background-color: rgb(241, 170, 62);
-
+    background-color:#f4976c;
+    width: 15%;
 }
-.main-word{
-    font-size: 22px;
-    font-weight: 700;
-    font-family: "DM Sans", sans-serif;
-    text-transform:capitalize;
-
-    
+.heart{
+    color: #161b2e;
+    font-size: 26px;
+}
+.input-group{
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+    border: .5px solid rgba(129, 127, 127, 0.842);
+    border-radius: 5px; 
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;   
+}
+.hint{
+    font-size: 15px;
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    color: #292c3ae7;
+}
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.dictionary section{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 10px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.Results .main-word{
+    background-color: #303c6c;
+    margin-right:8rem;
+    margin-left:8rem;
+    box-shadow: -2px 6px 18px rgba(0, 0, 0, 0.6);
 }
 .word-result{
-    color:rgb(7, 7, 7);
-    font-size: 30px;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 6px;
-    border: 2px ridge #494848;
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
 }
-.Phonetic a{
-    color:rgb(7, 7, 7);
-    background-color: rgb(255, 255, 255);
-    padding: 15px;
-    line-height: 1.5px;
-    font-size: 18px;
-    border-radius: 6px;
-    border: 2px ridge rgb(73, 72, 72);
-}
-.partOfSpeech{
+.phonetic-word{
+    color:rgb(255, 255, 255);
     font-size: 26px;
-    font-weight: 900;
-    font-variant: small-caps;
-    color:rgba(7, 7, 7, 0.993);
-    text-decoration: underline;
 }
-.title {
-    font-family:  "Courier Prime", monospace;
+.listen{
+    color: #161b2e;
     font-size: 22px;
-    color:rgb(7, 7, 7);
-    text-align: left;
-    font-weight: 500;
-}
-.definition{
-    font-size: 18px;
-    font-weight: 400;
-    color:rgb(8, 8, 8);
-    text-align: left;
-    font-family: "DM Sans", sans-serif;
 
 }
-.defBox{
-    color:rgb(31, 30, 30);
-    background-color:rgb(241, 170, 62);
-    padding: 20px;
-    border-radius: 6px;
-    align-content: center;
-    border: 2px ridge rgb(73, 72, 72);
-    width: 50%;
-    position: relative;
-    
-}
-
-.Example{
-    font-family:  "Courier Prime", monospace;
-    font-size: 16px;
-    font-weight: 500;
-    font-style: italic;
-    margin-left: -10px;
+button {
+    background-color: #f4976c;
 
 }
-.exBox{
-    background-color: #f8f8f6;
-    border: 2px ridge rgb(73, 72, 72);
-    border-radius: 20px;
+.Results section{
+    text-align: start;
 }
-.synBox{
-    background-color: #ffffff;
-    border: 2px ridge rgb(73, 72, 72);
-    border-radius: 20px;
+.part-Speech{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.884);
+
 }
-.synTitle {
-    font-size: 20px;
-    font-variant: small-caps;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    margin-left:-15px;
-    text-decoration:underline;
-}
+
+
+
+
 li {
     font-size: 18px;
     font-family:  "Courier Prime", monospace;
