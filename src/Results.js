@@ -11,16 +11,17 @@ export default function Results(props) {
         <div className="Results">
             
             <section className="main-word">
-                <div className=" row">
+                <div className=" row ms-1 ps-1">
                 <div className="word-result col">
                 {props.results[0].word}
                 </div>
+                Try finding one def  1 noun 1 verb
                 </div>
                 {props.results[0].phonetics.map(function(phonetic, index) {
                     
                     return (
-                        <div className="row d-flex">
-                        <div className="hear-see col-12" key={index}>
+                     <div className="row d-flex">
+                     <div className="hear-see col-12" key={index}>
                             <Phonetic phonetic={phonetic} />
                             </div>
                             </div>

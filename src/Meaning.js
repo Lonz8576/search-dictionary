@@ -5,12 +5,13 @@ import Example from "./Example";
 export default function Meaning(props) {
     return (
       <div className="meanings">
+       
               
             {props.meaning.definitions.map(function(definition, index) {
                 return (
                   
                   <div key={index} className="definition">
-                
+                  
                     <div className="defBox">
                     <div className="part-Speech">
                   {props.meaning.partOfSpeech}

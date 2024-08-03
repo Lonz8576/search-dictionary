@@ -13,7 +13,7 @@ body{
     background-color: #fbe8a6;
 }
 .logo{
-    margin: 1rem;
+    margin: .5rem;
    }
 input::placeholder{
     color: black;
@@ -24,28 +24,38 @@ input::placeholder{
 }
 .form-control{
     font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(22, 27, 46, .4);
 }
 .btn{
-    background-color:#f4976c;
+    background-color:rgb(244, 151, 108);
     width: 15%;
+    border-color: rgb(22, 27, 46, .4) rgb(22, 27, 46, .4) rgb(22, 27, 46, .4) transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    transition: ease-in-out 500ms;
+}
+.btn:hover{
+    background-color:rgb(180, 223, 229);
 }
 .heart{
-    color: #161b2e;
+    color: rgb(22, 27, 46);
     font-size: 26px;
 }
 .input-group{
-    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
-    border: .5px solid rgba(129, 127, 127, 0.842);
-    border-radius: 5px; 
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; 
     max-width: 600px;
     position: relative;
     margin: 0 auto;   
 }
 .hint{
-    font-size: 15px;
-    font-family: "Fira Code", monospace;
-    font-weight: 500;
-    color: #292c3ae7;
+    font-size: 16px;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: rgba(25, 30, 49, 0.795);
 }
 input:focus, input.form-control:focus {
     outline:none !important;
@@ -61,7 +71,7 @@ input:focus, input.form-control:focus {
     text-align: center;
     margin: 30px 10px;
     border-radius: 8px;
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
     box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
 }
 .Results .main-word{
@@ -72,23 +82,31 @@ input:focus, input.form-control:focus {
 }
 .word-result{
     font-size: 38px;
+    height:80px;
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
     font-weight: 700;
 }
+.Phonetic {
+    height: 50px;
+}
 .phonetic-word{
-    color:rgb(255, 255, 255);
-    font-size: 26px;
+    color:rgba(255, 255, 255, 0.801);
+    font-family: "Cutive Mono", monospace;
+    font-size: 20px;
 }
 .listen{
-    color: #161b2e;
-    font-size: 22px;
-
+    color: rgb(22, 27, 46);
+    font-size: 24px;
+    padding:5px 15px;
+    border: 1px solid rgb(22, 27, 46);
+    border-radius: 10px;
+    background-color: rgb(244, 151, 108);
+    transition: ease-in-out 500ms;
 }
-button {
-    background-color: #f4976c;
-
+.listen:hover{
+    background-color:rgb(180, 223, 229);
 }
 .Results section{
     text-align: start;
