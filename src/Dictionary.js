@@ -6,35 +6,43 @@ import axios from "axios";
 import Results from "./Results";
 
 
-export default function Dictionary() {
-    let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+    let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
 
     function handleResponse(response) {
         console.log(response.data);
         setResults(response.data);
     }
 
-    function search(event) {
-        event.preventDefault();
+    function search(){
         
-
         let apiUrl= `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleResponse);
     }
-     
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        search();
+    }
+
     function handleKeyword(event) {
         setKeyword(event.target.value);
+    }
 
+    function load() {
+        setLoaded(true);
+        search();
     }
     
-
+    if (loaded) {
 
     return (
     <div className="dictionary">
         <section className="search-area">
        <div className="hint">Find synonyms, definitions, antonyms, and related words</div>
-        <form onSubmit={search} className="input-group text-center mt-3">
+        <form onSubmit={handleSubmit} className="input-group text-center mt-3">
         <input type="search" placeholder="learn it, know it!" onChange={handleKeyword} className="form-control p-2" aria-label="word-search"/>
         <button class="btn btn-search" type="submit"><i class="bi bi-search-heart heart"></i></button>
 
@@ -46,4 +54,8 @@ export default function Dictionary() {
        
     </div>
     );
+} else {
+    load();
+    return "loading";
+}
 }
