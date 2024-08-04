@@ -1,45 +1,38 @@
 import React from "react";
 import Synonyms from "./Synonyms";
-import Example from "./Example";
+
+
 
 export default function Meaning(props) {
     return (
       <div className="meanings">
-       
-              
-            {props.meaning.definitions.map(function(definition, index) {
-                return (
-                  
-                  <div key={index} className="definition">
-                  
-                    <div className="defBox">
-                    <div className="part-Speech">
-                  {props.meaning.partOfSpeech}
-                   <br />
-                   </div>
-                     <span className="title">Definition: </span>
-                     {definition.definition}
-                     </div>
-                     
-                    <section>
-                     <div className="exBox">
-                     <Example example={definition.example} />
-                     
-                     </div>
-                   <div className="synBox">
-                 <Synonyms synonyms={definition.synonyms} />
+        <div className="part-Speech">
+            {props.meaning.partOfSpeech}
+          </div>
+            <div className="definition">
+             {props.meaning.definitions[0].definition}
+             <div className="example">
+             {props.meaning.definitions[0].example}
+             </div>
+             </div>
+              <div className="definition-two">
+                {props.meaning.definitions.definition}
+                <div className="example">
+                {props.meaning.definitions.example}
                  </div>
-                 </section>
-                 </div>
-                   
-           
-                );
-            })}
-           
-            
-            
-           
-            
+                </div>
+                <div className="synonyms">
+                  {props.meaning.synonyms.map(function (synonym, index) {
+                    return (
+                    <div key={index}>
+                    <Synonyms synonym={synonym} />
+                    </div>
+                    )
+                  }
+                  )}
+                 
+                 
+                  </div>                  
       </div>
     );
 }

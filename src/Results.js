@@ -15,7 +15,7 @@ export default function Results(props) {
                 <div className="word-result col">
                 {props.results[0].word}
                 </div>
-                Try finding one def  1 noun 1 verb
+                
                 </div>
                 {props.results[0].phonetics.map(function(phonetic, index) {
                     
