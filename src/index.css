@@ -71,7 +71,7 @@ input:focus, input.form-control:focus {
     text-align: center;
     margin: 30px 10px;
     border-radius: 8px;
-    padding: 20px 10px 20px 10px;
+    padding: 20px;
     box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
 }
 .Results .main-word{
@@ -93,7 +93,7 @@ input:focus, input.form-control:focus {
     height: 50px;
 }
 .phonetic-word{
-    color:rgba(255, 255, 255, 0.801);
+    color:rgb(180, 223, 229);
     font-family: "Cutive Mono", monospace;
     font-size: 26px;
     margin-right: 15px;
@@ -112,11 +112,15 @@ input:focus, input.form-control:focus {
 }
 .Results section{
     text-align: start;
+    background-color: rgba(255, 255, 255, 0.856);
+    box-shadow: -2px 6px 18px rgba(0, 0, 0, 0.4);
 }
 .part-Speech{
     font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
     font-family: "Fira Code", monospace;
-    color:rgb(22, 27, 46, .8);
+    color:rgb(244, 151, 108);
 }
 .definition {
     font-size: 22px;
@@ -124,13 +128,14 @@ input:focus, input.form-control:focus {
 }
 .example {
     font-size: 16px;
+    margin-top: 20px;
     font-family:"Fira Code", monospace;
     font-weight: 500;
 }
 .ex {
     font-family: "Cutive Mono", monospace;
     font-style:italic;
-    color:  rgb(22, 27, 46);
+    color: #303c6c ;
     font-size: 18px;
     font-weight: 600;
 }

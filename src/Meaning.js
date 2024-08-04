@@ -9,13 +9,9 @@ export default function Meaning(props) {
         <div className="part-Speech">
             {props.meaning.partOfSpeech}
           </div>
-          <br />
             <div className="definitions">
             <span className="definition">{props.meaning.definitions[0].definition}</span> 
-             
-
              <div className="example text-center">
-             <br />
              <span className="ex" >{props.meaning.definitions[0].example}</span>
              </div>
              </div>
@@ -25,7 +21,6 @@ export default function Meaning(props) {
                 {props.meaning.definitions.example}
                  </div>
                 </div>
-                <br />
                 <div className="synonyms">
                   <span className="title">Synonyms:</span> 
                   
