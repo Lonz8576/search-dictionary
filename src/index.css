@@ -81,12 +81,13 @@ input:focus, input.form-control:focus {
     box-shadow: -2px 6px 18px rgba(0, 0, 0, 0.6);
 }
 .word-result{
-    font-size: 38px;
+    font-size: 46px;
     height:80px;
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: .5px;
 }
 .Phonetic {
     height: 50px;
@@ -94,14 +95,15 @@ input:focus, input.form-control:focus {
 .phonetic-word{
     color:rgba(255, 255, 255, 0.801);
     font-family: "Cutive Mono", monospace;
-    font-size: 20px;
+    font-size: 26px;
+    margin-right: 15px;
 }
 .listen{
     color: rgb(22, 27, 46);
-    font-size: 24px;
-    padding:5px 15px;
+    font-size: 28px;
+    padding:2px 15px;
     border: 1px solid rgb(22, 27, 46);
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: rgb(244, 151, 108);
     transition: ease-in-out 500ms;
 }
@@ -112,16 +114,37 @@ input:focus, input.form-control:focus {
     text-align: start;
 }
 .part-Speech{
-    font-size: 22px;
-    color: rgba(0, 0, 0, 0.884);
-
+    font-size: 20px;
+    font-family: "Fira Code", monospace;
+    color:rgb(22, 27, 46, .8);
 }
-
-
-
-
+.definition {
+    font-size: 22px;
+    font-family: "DM Sans", sans-serif;
+}
+.example {
+    font-size: 16px;
+    font-family:"Fira Code", monospace;
+    font-weight: 500;
+}
+.ex {
+    font-family: "Cutive Mono", monospace;
+    font-style:italic;
+    color:  rgb(22, 27, 46);
+    font-size: 18px;
+    font-weight: 600;
+}
+.Synonyms {
+    font-family: "DM Sans", sans-serif;
+}
+.title {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
 li {
     font-size: 18px;
-    font-family:  "Courier Prime", monospace;
+    font-family: "DM Sans", sans-serif;
     font-weight: 400;
+    line-height: 25px;
 }

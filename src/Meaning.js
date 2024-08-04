@@ -9,10 +9,14 @@ export default function Meaning(props) {
         <div className="part-Speech">
             {props.meaning.partOfSpeech}
           </div>
-            <div className="definition">
-             {props.meaning.definitions[0].definition}
-             <div className="example">
-             {props.meaning.definitions[0].example}
+          <br />
+            <div className="definitions">
+            <span className="definition">{props.meaning.definitions[0].definition}</span> 
+             
+
+             <div className="example text-center">
+             <br />
+             <span className="ex" >{props.meaning.definitions[0].example}</span>
              </div>
              </div>
               <div className="definition-two">
@@ -21,7 +25,10 @@ export default function Meaning(props) {
                 {props.meaning.definitions.example}
                  </div>
                 </div>
+                <br />
                 <div className="synonyms">
+                  <span className="title">Synonyms:</span> 
+                  
                   {props.meaning.synonyms.map(function (synonym, index) {
                     return (
                     <div key={index}>
