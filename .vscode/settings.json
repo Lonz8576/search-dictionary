@@ -2,5 +2,7 @@
     "files.autoSave": "afterDelay",
     "editor.wordWrap": "bounded",
     "editor.tabSize": 4,
-    "editor.padding.top": 2
+    "editor.padding.top": 2,
+    "editor.parameterHints.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true
 }

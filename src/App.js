@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <main>
-        <Dictionary defaultKeyword="word" />
+        <Dictionary defaultInputWord="word" />
       </main>
       <footer className="footer">
         Coded by <a href="" >Nic Alonso</a>  |  Hosted on  <a href="https://app.netlify.com/">Netlify</a>

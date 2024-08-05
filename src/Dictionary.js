@@ -4,21 +4,35 @@ import "./index.css";
 import logo from "./owlknow.png";
 import axios from "axios";
 import Results from "./Results";
+import Photos from "./Photos";
 
 
 export default function Dictionary(props) {
-    let [keyword, setKeyword] = useState(props.defaultKeyword);
+    let [keyword, setKeyword] = useState(props.defaultInputWord);
     let [results, setResults] = useState(null);
     let [loaded, setLoaded] = useState(false);
+    let [photos, setPhotos] = useState(null);
 
     function handleResponse(response) {
-        console.log(response.data);
         setResults(response.data);
     }
-    function search(){
-        
-        let apiUrl= `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+
+    function imgResponse(response) {
+        setPhotos(response.data.photos);
+        console.log(response.data);
+    }
+
+    function search() {
+        const apiUrl= `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleResponse);
+
+
+        const pexelsKey ="9NkW6fIdNnqMYsN5EQOHXoxKIQHRnBHbN9VuRlANvFDaSMqVfCScoXh2";
+        let header = { Authorization : `${pexelsKey}`};
+
+        const pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&orientation=landscape&per_page=20`;
+
+        axios.get(pexelsUrl, { headers: header }).then(imgResponse);
     }
     function handleSubmit(event) {
         event.preventDefault();
@@ -44,6 +58,7 @@ export default function Dictionary(props) {
         <div className="text-center"id="logo" ><img src={logo} className='logo' alt='logo' width={140}/></div>
         </section>
         <Results results={results} />
+        <Photos photos={photos} />
     </div>
     );
 } else {

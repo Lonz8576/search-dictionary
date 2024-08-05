@@ -3,18 +3,7 @@
 
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-* {
-    color: black;
-}
-a{
-    color: black;
-}
-body{
-    background-color: #fbe8a6;
-}
-.App {
-    max-width: 960px;
-}
+
 .logo{
     margin: .5rem;
    }
@@ -77,7 +66,7 @@ input:focus, input.form-control:focus {
     padding: 20px;
     box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
 }
-.Results .main-word{
+.dataResults .main-word{
     background-color: #303c6c;
     margin-right:8rem;
     margin-left:8rem;
@@ -111,7 +100,7 @@ input:focus, input.form-control:focus {
 .listen:hover{
     background-color:rgb(180, 223, 229);
 }
-.Results section{
+.dataResults section{
     text-align: start;
     background-color: rgba(255, 255, 255, 0.856);
     box-shadow: -2px 6px 18px rgba(0, 0, 0, 0.4);
