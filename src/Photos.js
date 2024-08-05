@@ -6,20 +6,25 @@ export default function Photos(props) {
         <section className="img-array">
             {props.photos.map(function(photo, photoArray){
                 return (
-                    <div className="container-fluid">
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div className="container-fluid" key={photoArray}>
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" key={photoArray}>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-    <img src={photo.src.small} key={photoArray} />
-    </div>
+    <div class="carousel-item active" >
+    <img src={photo.src.medium} />
+    </div> 
+   
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+    
+    <span class="previous">
+        <i class="bi bi-arrow-left-circle-fill left"></i>
+    </span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+   
+    <span class="next">
+    <i class="bi bi-arrow-right-circle-fill right"></i>
+    </span>
   </button>
 </div>
                     </div>

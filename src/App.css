@@ -19,8 +19,9 @@
 a{
     color: black;
 }
-body{
-    background-color: #fbe8a6;
+.left, .right{
+    font-size: 5rem;
+    color:rgb(180, 223, 229);
 }
 
 

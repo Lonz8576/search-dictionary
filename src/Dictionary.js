@@ -30,7 +30,7 @@ export default function Dictionary(props) {
         const pexelsKey ="9NkW6fIdNnqMYsN5EQOHXoxKIQHRnBHbN9VuRlANvFDaSMqVfCScoXh2";
         let header = { Authorization : `${pexelsKey}`};
 
-        const pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&orientation=landscape&per_page=20`;
+        const pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&orientation=landscape&per_page=1&page=1`;
 
         axios.get(pexelsUrl, { headers: header }).then(imgResponse);
     }
