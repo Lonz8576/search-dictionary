@@ -4,12 +4,11 @@ import Phonetic from "./Phonetic";
 
 
 
-export default function dataResult
-(props) {
+export default function Results(props) {
     if (props.results) {
     return (
     
-        <div className="dataResults">
+        <div className="Results">
             <section className="main-word">
                 <div className=" row ms-1 ps-1">
                 <div className="word-result col">

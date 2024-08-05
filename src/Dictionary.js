@@ -8,7 +8,7 @@ import Photos from "./Photos";
 
 
 export default function Dictionary(props) {
-    let [keyword, setKeyword] = useState(props.defaultInputWord);
+    let [keyword, setKeyword] = useState(props.defaultKeyWord);
     let [results, setResults] = useState(null);
     let [loaded, setLoaded] = useState(false);
     let [photos, setPhotos] = useState(null);
@@ -19,7 +19,6 @@ export default function Dictionary(props) {
 
     function imgResponse(response) {
         setPhotos(response.data.photos);
-        console.log(response.data);
     }
 
     function search() {
@@ -30,7 +29,7 @@ export default function Dictionary(props) {
         const pexelsKey ="9NkW6fIdNnqMYsN5EQOHXoxKIQHRnBHbN9VuRlANvFDaSMqVfCScoXh2";
         let header = { Authorization : `${pexelsKey}`};
 
-        const pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&orientation=landscape&per_page=1&page=1`;
+        const pexelsUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9&size=lanscape`;
 
         axios.get(pexelsUrl, { headers: header }).then(imgResponse);
     }
