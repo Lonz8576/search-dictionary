@@ -12,6 +12,9 @@ a{
 body{
     background-color: #fbe8a6;
 }
+.App {
+    max-width: 960px;
+}
 .logo{
     margin: .5rem;
    }

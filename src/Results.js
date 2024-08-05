@@ -15,10 +15,10 @@ export default function Results(props) {
                 {props.results[0].word}
                 </div>
                 </div>
-                {props.results[0].phonetics.map(function(phonetic, index) {
+                {props.results[0].phonetics.map(function(phonetic, listenIndex) {
                     return (
                      <div className="row d-flex">
-                     <div className="hear-see col-12" key={index}>
+                     <div className="hear-see col-12" key={listenIndex}>
                             <Phonetic phonetic={phonetic} />
                             </div> </div>
                     )})}

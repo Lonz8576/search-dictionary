@@ -24,9 +24,9 @@ export default function Meaning(props) {
                 <div className="synonyms">
                   <span className="title">Synonyms:</span> 
                   
-                  {props.meaning.synonyms.map(function (synonym, index) {
+                  {props.meaning.synonyms.map(function (synonym, samelist) {
                     return (
-                    <div key={index}>
+                    <div key={samelist}>
                     <Synonyms synonym={synonym} />
                     </div>
                     )
