@@ -12,7 +12,7 @@ export default function Photos(props) {
                    
                       <div className="col">
                       <a href={photo.src.original} target="_blank" rel="noreferrer">
-                        <img src={photo.src.small} className="api-img" />
+                        <img src={photo.src.small} className="api-img" alt="Photos" />
                         </a>
                         </div>
                     </div>
